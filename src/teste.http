@@ -1,0 +1,62 @@
+###HEALTH
+GET http://localhost:3000/health
+
+
+###Create User
+POST http://localhost:3000/user 
+Content-Type: application/json
+
+{
+    "name":"ADMIN",
+    "email":"admin@petshop.com",
+    "password":"1234",
+    "role": "ADMIN"
+}
+
+###LOGIN
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"admin@petshop.com",
+    "password":"1234"
+}
+
+///////////////////////// USERS
+
+### GetAll
+GET http://localhost:3000/user
+Authorization: Bearer 
+
+
+//////////////////////// PRODUCTS
+
+### GetAll
+GET http://localhost:3000/product
+Authorization: Bearer 
+
+
+### create
+POST http://localhost:3000/product
+Authorization: Bearer 
+Content-Type: application/json
+
+{
+    "email":"admin@petshop.com",
+    "password":"1234"
+}
+
+### delete
+DELETE http://localhost:3000/product/1
+Authorization: Bearer 
+
+
+### update
+PUT http://localhost:3000/product
+Authorization: Bearer 
+Content-Type: application/json
+
+{
+    "email":"admin@petshop.com",
+    "password":"1234"
+}
