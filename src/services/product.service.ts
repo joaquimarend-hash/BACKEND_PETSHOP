@@ -22,7 +22,7 @@ export class ProductService {
     async update(label:string, price:number, description:string,image:string, id:number) {
         return prisma.products.update({
             where: { id },
-            data: { label, price, description, image, id }
+            data: { label, price, description, image}
         })
     }
 

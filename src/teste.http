@@ -7,10 +7,10 @@ POST http://localhost:3000/user
 Content-Type: application/json
 
 {
-    "name":"ADMIN",
-    "email":"admin@petshop.com",
+    "name":"DEFAULT",
+    "email":"default@petshop.com",
     "password":"1234",
-    "role": "ADMIN"
+    "role": "DEFAULT"
 }
 
 ###LOGIN
@@ -26,37 +26,41 @@ Content-Type: application/json
 
 ### GetAll
 GET http://localhost:3000/user
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
 
 
 //////////////////////// PRODUCTS
 
 ### GetAll
-GET http://localhost:3000/product
-Authorization: Bearer 
+GET http://localhost:3000/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
 
 
 ### create
-POST http://localhost:3000/product
-Authorization: Bearer 
+POST http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODExMTQzODgsImV4cCI6MTc4MTExNzk4OH0.CWeTvUyjw8OZp1obSVkOcnFriN-6nKvFtmxc46_R21o
 Content-Type: application/json
 
 {
-    "email":"admin@petshop.com",
-    "password":"1234"
+    "label":"label",
+    "price":10,
+    "description":"description",
+    "image":"image"
 }
 
 ### delete
-DELETE http://localhost:3000/product/1
-Authorization: Bearer 
+DELETE http://localhost:3000/products/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
 
 
 ### update
-PUT http://localhost:3000/product
-Authorization: Bearer 
+PUT http://localhost:3000/products/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
 Content-Type: application/json
 
 {
-    "email":"admin@petshop.com",
-    "password":"1234"
+    "label":"lablel",
+    "price":10,
+    "description":"description",
+    "image":"image"
 }

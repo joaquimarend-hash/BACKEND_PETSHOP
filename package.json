@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch ./src/index.ts",
+    "dev": "tsx src/index.ts",
     "start":"node -- wacht index.ts"
   },
   "keywords": [],

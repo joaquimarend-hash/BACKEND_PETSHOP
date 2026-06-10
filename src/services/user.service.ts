@@ -1,6 +1,7 @@
 import { prisma } from "../lib/prisma.js"
-import type { Role } from "../../generated/prisma/enums.js"
 import bcrypt from "bcrypt"
+import type { Role } from "../../generated/prisma/enums.js"
+
 
 export class UserService {
     async getAll() {

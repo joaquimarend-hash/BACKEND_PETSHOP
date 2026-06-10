@@ -1,6 +1,7 @@
 import { Router } from "express"
 import { UserController } from "../controllers/user.controller.js"
 import { authMiddleware } from "../middleware/auth.middleware.js"
+import { adminMiddleware } from "../middleware/admin.middleware.js"
 
 const userRouter = Router()
 const userController = new UserController()
@@ -9,10 +10,8 @@ const userController = new UserController()
 userRouter.post("/", userController.create)
 
 
-
 // TODAS as rotas abaixo deate ponto ///
-userRouter.use(authMiddleware)
-
+userRouter.use(authMiddleware, adminMiddleware)
 //getAll
 userRouter.get("/", userController.getAll)
 //getById
