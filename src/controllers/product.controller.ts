@@ -16,8 +16,8 @@ export class ProductController {
 
     async create(req: Request, res: Response) {
         try {
-            const {label, price, description, image} = req.body;
-            const newPost = await productService.create({label, price, description, image});
+            const {label, price, description, image, animal, categoria} = req.body;
+            const newPost = await productService.create({label, price, description, image, categoria, animal});
             return res.status(201).json(newPost);
         } catch (err:any) {
             res.status(500).json({ error: err.message });
@@ -28,8 +28,8 @@ export class ProductController {
     async update(req: Request, res: Response) {
         try {
             const id = Number(req.params.id)
-            const {label, price, description, image} = req.body
-            const post = await productService.update(label, price, description, image, id)
+            const {label, price, description, image, animal, categoria} = req.body
+            const post = await productService.update(label, price, description, image, id, categoria, animal)
             res.json(post)
         } catch (err) {
             res.status(500).json({ error: 'Erro ao buscar produto' });

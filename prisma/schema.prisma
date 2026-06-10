@@ -26,12 +26,13 @@ model Users {
   createdAt DateTime @default(now())
   }
 
-
 model Products{
   id Int @id @default(autoincrement())
   label String
   description String
   price Int
   image String
+  categoria String 
+  animal String 
 }
 

@@ -1,5 +1,4 @@
 import { prisma } from "../lib/prisma.js"
-// import bcrypt from "bcrypt"
 
 export class ProductService {
     async getAll() {
@@ -8,21 +7,23 @@ export class ProductService {
         })
     }
 
-    async create(data: {label:string, price:number, description:string,image:string}) {
+    async create(data: { label: string, price: number, description: string, image: string, categoria: string, animal: string }) {
         return await prisma.products.create({
             data: {
                 label: data.label,
                 price: data.price,
                 description: data.description,
-                image:data.image
+                image: data.image,
+                categoria: data.categoria,
+                animal: data.animal
             }
         });
     }
 
-    async update(label:string, price:number, description:string,image:string, id:number) {
+    async update(label: string, price: number, description: string, image: string, id: number, categoria: string, animal: string) {
         return prisma.products.update({
             where: { id },
-            data: { label, price, description, image}
+            data: { label, price, description, image, categoria, animal }
         })
     }
 

@@ -45,7 +45,9 @@ Content-Type: application/json
     "label":"label",
     "price":10,
     "description":"description",
-    "image":"image"
+    "image":"image",
+    "categoria":"categoria",
+    "animal":"animal"
 }
 
 ### delete
@@ -62,5 +64,7 @@ Content-Type: application/json
     "label":"lablel",
     "price":10,
     "description":"description",
-    "image":"image"
+    "image":"image",
+    "categoria":"categoria",
+    "animal":"animal"
 }
