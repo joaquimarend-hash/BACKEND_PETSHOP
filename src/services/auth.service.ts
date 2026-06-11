@@ -22,13 +22,13 @@ export class AuthServices {
             throw err
         }
 
-        const token = jwt.sign({ sub: user.id, email: user.email }, jwtSecret, {
-            expiresIn: "1h",
+        const token = jwt.sign({ sub: user.id, email: user.email}, jwtSecret, {
+            expiresIn: "3h",
         })
 
         return {
             token,
-            user: { id: user.id, name: user.name, email: user.email }
+            user: { id: user.id, name: user.name, email: user.email, role:user.role },
         }
     }
 }
