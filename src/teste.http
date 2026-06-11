@@ -1,9 +1,9 @@
 ###HEALTH
-GET http://localhost:3000/health
+GET http://localhost:6767/health
 
 
 ###Create User
-POST http://localhost:3000/user 
+POST http://localhost:6767/user 
 Content-Type: application/json
 
 {
@@ -14,30 +14,31 @@ Content-Type: application/json
 }
 
 ###LOGIN
-POST http://localhost:3000/auth/login
+POST http://localhost:6767/auth/login
 Content-Type: application/json
 
 {
-    "email":"admin@petshop.com",
+    "email":"default@petshop.com",
     "password":"1234"
 }
 
 ///////////////////////// USERS
 
 ### GetAll
-GET http://localhost:3000/user
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
+GET http://localhost:6767/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTIwMTI5MSwiZXhwIjoxNzgxMjA0ODkxfQ.xrP5hIYs0-z_u7SBoxwC7Y-y8Ze2FtQ6dnKT_3qheYk
+
 
 
 //////////////////////// PRODUCTS
 
 ### GetAll
-GET http://localhost:3000/products
+GET http://localhost:6767/products
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
 
 
 ### create
-POST http://localhost:3000/products
+POST http://localhost:6767/products
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODExMTQzODgsImV4cCI6MTc4MTExNzk4OH0.CWeTvUyjw8OZp1obSVkOcnFriN-6nKvFtmxc46_R21o
 Content-Type: application/json
 
@@ -51,12 +52,12 @@ Content-Type: application/json
 }
 
 ### delete
-DELETE http://localhost:3000/products/2
+DELETE http://localhost:6767/products/2
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
 
 
 ### update
-PUT http://localhost:3000/products/3
+PUT http://localhost:6767/products/3
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
 Content-Type: application/json
 

@@ -3,11 +3,19 @@ import express from "express"
 import userRouter from "./routes/user.route.js"
 import productRouter from "./routes/product.routes.js"
 import authRouter from "./routes/auth.router.js"
+import cors from 'cors'
 
 const app = express()
+
+app.use(cors({
+  origin: 'http://localhost:3000', // Libera especificamente o seu frontend Next.js
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use(express.json())
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 6767
 
 //ROTAS
 app.get("/health", (req, res) => {
