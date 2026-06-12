@@ -26,7 +26,7 @@ Content-Type: application/json
 
 ### GetAll
 GET http://localhost:6767/user
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODEyOTUwNTUsImV4cCI6MTc4MTMwNTg1NX0.kavZYh_XVs3RWMF9T4avwGp0WzF6QEc3xsVcIVh6LfY
 
 
 
@@ -70,17 +70,3 @@ Content-Type: application/json
     "animal": "dog"
 }
 ###
-
-### create  // ok
-POST http://localhost:6767/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODEyODY1MTEsImV4cCI6MTc4MTI5NzMxMX0.7lgNlzOVvVHvh6ImLWZq_yUkPFLsK29oqoLzQjHTJ_o
-Content-Type: application/json
-
-{
-    "label":"dogShampoo2",
-    "price":19,
-    "description":"Fórmula suave que limpa e ajuda a desembaraçar os pelos, garantindo brilho e perfume por muito mais tempo.",
-    "image":"dogShampoo2",
-    "categoria":"shampoo",
-    "animal":"dog"
-}
