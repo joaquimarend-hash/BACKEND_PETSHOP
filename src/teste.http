@@ -18,7 +18,7 @@ POST http://localhost:6767/auth/login
 Content-Type: application/json
 
 {
-    "email":"default@petshop.com",
+    "email":"admin@petshop.com",
     "password":"123"
 }
 
@@ -39,7 +39,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsI
 
 ### create  // ok
 POST http://localhost:6767/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODEyODY1MTEsImV4cCI6MTc4MTI5NzMxMX0.7lgNlzOVvVHvh6ImLWZq_yUkPFLsK29oqoLzQjHTJ_o
 Content-Type: application/json
 
 {
@@ -52,20 +52,35 @@ Content-Type: application/json
 }
 
 ### delete  //ok
-DELETE http://localhost:6767/products/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
+DELETE http://localhost:6767/products/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODEyODcxMDYsImV4cCI6MTc4MTI5NzkwNn0.wdPe7XsnqZ4zCeJPiA-X0kp7K81oslo_VOyxyf-PFag
 
 
 ### update  //ok
-PUT http://localhost:6767/products/2
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
+PUT http://localhost:6767/products/15
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODEyODk2MzMsImV4cCI6MTc4MTMwMDQzM30.syjNgbfBcFWSAI3rdd8Cihn8NCHRXrVGk7DRxV2rJHU
 Content-Type: application/json
 
 {
-    "label":"lablel",
-    "price":10,
-    "description":"description",
-    "image":"image",
-    "categoria":"categoria",
-    "animal":"animal"
+    "label": "dogFood2",
+    "description": "Sabor irresistível e alta digestibilidade. Rica em vitaminas essenciais para manter seu cão forte e saudável.",
+    "price": 45,
+    "image": "dogFood",
+    "categoria": "food",
+    "animal": "dog"
+}
+###
+
+### create  // ok
+POST http://localhost:6767/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODEyODY1MTEsImV4cCI6MTc4MTI5NzMxMX0.7lgNlzOVvVHvh6ImLWZq_yUkPFLsK29oqoLzQjHTJ_o
+Content-Type: application/json
+
+{
+    "label":"dogShampoo2",
+    "price":19,
+    "description":"Fórmula suave que limpa e ajuda a desembaraçar os pelos, garantindo brilho e perfume por muito mais tempo.",
+    "image":"dogShampoo2",
+    "categoria":"shampoo",
+    "animal":"dog"
 }
