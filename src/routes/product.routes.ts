@@ -6,7 +6,7 @@ import { adminMiddleware } from "../middleware/admin.middleware.js"
 const productRouter = Router()
 const productController = new ProductController()
 
-productRouter.get("/", productController.getAll)
+productRouter.get("/",authMiddleware, productController.getAll)
 
 // TODAS as rotas abaixo deate ponto ///
 productRouter.use(authMiddleware, adminMiddleware)

@@ -7,9 +7,10 @@ POST http://localhost:6767/user
 Content-Type: application/json
 
 {
-    "name":"teste",
-    "email":"2@2.com",
-    "password":"2222"
+    "name":"default",
+    "email":"default@petshop.com",
+    "password":"123",
+    "role":"DEFAULT"
 }
 
 ###LOGIN
@@ -17,28 +18,28 @@ POST http://localhost:6767/auth/login
 Content-Type: application/json
 
 {
-    "email":"2@2.com",
-    "password":"2222"
+    "email":"default@petshop.com",
+    "password":"123"
 }
 
-///////////////////////// USERS
+///////////////////////// USERS ///funcionando
 
 ### GetAll
 GET http://localhost:6767/user
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsImVtYWlsIjoiMUAxLmNvbSIsImlhdCI6MTc4MTIwNjMxMywiZXhwIjoxNzgxMjA5OTEzfQ.p1C18_sK4kY5-gfXjAxSw_b9hUCN1I9WqFksjZrevmw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
 
 
 
 //////////////////////// PRODUCTS
 
-### GetAll
+### GetAll //ok
 GET http://localhost:6767/products
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsImVtYWlsIjoiMUAxLmNvbSIsImlhdCI6MTc4MTIwNjMxMywiZXhwIjoxNzgxMjA5OTEzfQ.p1C18_sK4kY5-gfXjAxSw_b9hUCN1I9WqFksjZrevmw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
 
 
-### create
+### create  // ok
 POST http://localhost:6767/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODExMTQzODgsImV4cCI6MTc4MTExNzk4OH0.CWeTvUyjw8OZp1obSVkOcnFriN-6nKvFtmxc46_R21o
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
 Content-Type: application/json
 
 {
@@ -50,14 +51,14 @@ Content-Type: application/json
     "animal":"animal"
 }
 
-### delete
-DELETE http://localhost:6767/products/2
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
+### delete  //ok
+DELETE http://localhost:6767/products/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
 
 
-### update
-PUT http://localhost:6767/products/3
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTExMzkzNywiZXhwIjoxNzgxMTE3NTM3fQ.X7-H7SUfScmt6NxVy2P6fFH5AjwgtUD9cGRK92ujujI
+### update  //ok
+PUT http://localhost:6767/products/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoiZGVmYXVsdEBwZXRzaG9wLmNvbSIsImlhdCI6MTc4MTI4MzQwOSwiZXhwIjoxNzgxMjk0MjA5fQ.IQp7_2zChqAXIZi_awGVQxstjBgkN7CkxAnMAxyfQj4
 Content-Type: application/json
 
 {
