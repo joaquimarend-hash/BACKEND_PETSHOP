@@ -34,7 +34,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsI
 
 ### GetAll //ok
 GET http://localhost:6767/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODE1NDkzNzYsImV4cCI6MTc4MTU2MDE3Nn0.aBrSDjbJ-bdZ7pBQZXYfuFoC8ydQ4cv2KmnOhmxFP0E
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODE3MTc4NDksImV4cCI6MTc4MTcyODY0OX0.9Qb7JUrOvlwu5bOLTbHIP2RLip06uwUIMlLQ8RxUKo4
 
 
 ### create  // ok
