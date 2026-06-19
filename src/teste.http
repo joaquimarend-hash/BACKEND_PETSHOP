@@ -34,7 +34,15 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsI
 
 ### GetAll //ok
 GET http://localhost:6767/products
+<<<<<<< HEAD
+<<<<<<< Updated upstream
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODE4OTQwMDYsImV4cCI6MTc4MTkwNDgwNn0.8LbN8CYntwh2tKOsZg1PLovIslYt1CilbWl-NcOSsqo
+=======
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODE4OTM1NTMsImV4cCI6MTc4MTkwNDM1M30.CybxT3iie_R2VJILwFH_DosmD7o8LUYmgAPMJ9TY_Uk
+>>>>>>> Stashed changes
+=======
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODE4OTQwMDYsImV4cCI6MTc4MTkwNDgwNn0.8LbN8CYntwh2tKOsZg1PLovIslYt1CilbWl-NcOSsqo
+>>>>>>> fd20e6d36270fc88e7d8e79f457af16ba3e4a014
 
 
 ### create  // ok
