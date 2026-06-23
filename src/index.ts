@@ -4,6 +4,8 @@ import userRouter from "./routes/user.route.js"
 import productRouter from "./routes/product.routes.js"
 import authRouter from "./routes/auth.router.js"
 import cors from 'cors'
+import categoriesRouter from "./routes/categories.route.js"
+import animalsRouter from "./routes/animals.router.js"
 
 const app = express()
 
@@ -25,6 +27,8 @@ app.get("/health", (req, res) => {
 app.use("/user", userRouter)
 app.use("/auth", authRouter)
 app.use("/products", productRouter)
+app.use("/categories", categoriesRouter)
+app.use("/animals", animalsRouter)
 
 
 app.listen(port, () => {
