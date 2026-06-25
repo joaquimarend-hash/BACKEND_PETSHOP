@@ -1,4 +1,5 @@
 import { prisma } from "../lib/prisma.js"
+import type { Status } from "../../generated/prisma/enums.js"
 
 export interface CartItem {
     id: number;
@@ -47,6 +48,13 @@ export class OrdersService {
             include: {
                 items: true,
             },
+        });
+    }
+
+    async update(id: number, status: Status) {
+        return await prisma.order.update({
+            where: {id},
+            data: {status}
         });
     }
 

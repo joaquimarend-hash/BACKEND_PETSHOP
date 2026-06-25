@@ -17,6 +17,12 @@ enum Role {
   DEFAULT
 }
 
+enum Status {
+  ENVIADO
+  ENTREGUE
+  PROCESSANDO
+}
+
 model Users {
   id        Int      @id @default(autoincrement())
   name      String
@@ -44,6 +50,7 @@ model Order {
   isDelivery    Boolean     @default(false)
   createdAt     DateTime    @default(now())
   items         OrderItem[]
+  status        Status      @default(PROCESSANDO)
 }
 
 model OrderItem {
