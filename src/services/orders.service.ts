@@ -14,7 +14,10 @@ export interface CartItem {
 export class OrdersService {
     async getAll() {
         return prisma.order.findMany({
-            orderBy: { id: "asc" }
+            orderBy: { id: "asc" },
+            include: {
+                items: true,
+            },
         })
     }
 

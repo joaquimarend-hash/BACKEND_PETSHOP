@@ -7,8 +7,8 @@ const ordersServices = new OrdersService()
 export class OrderController {
     async getAll(req: Request, res: Response) {
         try {
-            const users = await ordersServices.getAll()
-            res.json(users)
+            const order = await ordersServices.getAll()
+            res.json(order)
         } catch (err) {
             res.status(500).json({ error: 'Erro ao buscar order' });
         }

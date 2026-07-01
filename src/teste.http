@@ -81,5 +81,5 @@ GET http://localhost:6767/animals
 ####################################################################  ORDERS
 
 GET http://localhost:6767/orders
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODI0OTc3NjMsImV4cCI6MTc4MjUwODU2M30.PUqvrql536_FuiYxQUysw0Lw_RlN8X0C7CtHcWZSXhY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AcGV0c2hvcC5jb20iLCJpYXQiOjE3ODI5MzAyNTMsImV4cCI6MTc4Mjk0MTA1M30.xUnED9tcJVAIBY51L4C6ymF_JKZ5s2fnNJ_hIBISTfo
 
